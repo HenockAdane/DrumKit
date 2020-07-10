@@ -1,0 +1,114 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 50vw;
+    height: 500px;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(3, 1fr);
+    gap: 5px;
+    grid-template-areas: 
+    "check check check"
+    "q w e"
+    "a s d"
+    "z x c";
+   
+}
+
+
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.checkbox
+{
+    grid-area: check;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.checkbox p
+{
+    font-size: 40px;
+}
+
+.checkbox input
+{
+    display: block;
+    height: 20px;
+    width: 30px;
+}
+
+.checkbox input:focus
+{
+    outline: none;   
+}
+
+.q
+{
+    grid-area: q;
+}
+
+.w
+{
+    grid-area: w;
+}
+
+.e
+{
+    grid-area: e;
+}
+
+.a
+{
+    grid-area: a;
+}
+
+.s
+{
+    grid-area: s;
+}
+
+.d
+{
+    grid-area: d;
+}
+
+.z
+{
+    grid-area: z;
+}
+
+.x
+{
+    grid-area: x;
+}
+
+.c
+{
+    grid-area: c;
+}
